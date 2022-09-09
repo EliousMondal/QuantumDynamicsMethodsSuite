@@ -68,7 +68,7 @@ def makeArrays():
 def update_Gamma( Ugam, Hel ):
 
     E,U = np.linalg.eigh(Hel)
-    Udt = U @  np.diag( np.exp( -1j * E * dtI) ) @ U.T # Transform eigenvalues 
+    Udt = U @  np.diag( np.exp( -1j * E * dtI) ) @ np.conjugate(U).T # Transform eigenvalues 
     Ugam = Udt @ Ugam # Paper says U(t_N) * U(t_N-1) * U(t_N-2) * ... 
     
     ### Potentially faster version with Scipy expm method ###
