@@ -10,6 +10,7 @@
 
 python3 spin-PLDM.py 0 0 # For only spin-PLDM
 
+# To submit all initial density matrix elements in one job
 #for j in {0..1}; do 
 #    for k in {0..1}; do 
 #        python3 spin-PLDM.py $j $k # For only spin-PLDM

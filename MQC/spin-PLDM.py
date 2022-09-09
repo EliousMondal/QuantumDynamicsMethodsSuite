@@ -316,5 +316,3 @@ if ( __name__ == "__main__"  ):
     print (f"Total Computation Time (Hours): {(stop - start) / 3600}")
 
 
-
-
